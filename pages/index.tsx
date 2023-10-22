@@ -1,7 +1,3 @@
-
 export default function Home() {
-  return (
-    <main className="h-full bg-gray-50">
-    </main>
-  )
+  return <main className="h-full bg-gray-50"></main>;
 }
