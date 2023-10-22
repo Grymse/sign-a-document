@@ -8,9 +8,9 @@ interface Worktask {
   hours: number;
 }
 
-
 type CheckListMapper = {
-[key:string]: number[] }
+  [key: string]: number[];
+};
 
 const checklistToWorktask: CheckListMapper = {
   type1: [1, 2, 3],
@@ -18,6 +18,11 @@ const checklistToWorktask: CheckListMapper = {
   type3: [3, 6, 9],
 };
 
+/**
+ * Maps checklists to worktasks
+ * @param checklists
+ * @returns
+ */
 function mapChecklistsToWorktasks(checklists: Checklist[]): Worktask[] {
   const worktasks: Worktask[] = [];
 
